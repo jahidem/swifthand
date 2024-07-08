@@ -9,6 +9,7 @@ controller = Controller(valid_moves)
 
 
 def run():
+    controller.helper.validate_moves()
     controller.randomize_computer_move()
     controller.initialize_hmca()
     while True:
