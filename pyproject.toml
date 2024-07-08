@@ -1,0 +1,16 @@
+[project]
+name = "swifthand"
+version = "0.1"
+dependencies = ["prettytable"]
+
+[project.optional-dependencies]
+dev = [
+  "black"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+swifthand = "swifthand.main:run"
